@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express')
 const router = express.Router();
 const FormData = require('form-data');
 const {
@@ -7,7 +7,7 @@ const {
 const app = express();
 const port = 8080;
 
-router.get('/bing-img', async (req, res) => {
+router.get('/createImage', async (req, res) => {
   try {
     let text = req.query.prompt;
 
