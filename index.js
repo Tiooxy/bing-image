@@ -32,7 +32,7 @@ if (data.length > 0) {
     } else {
       res.json({
         success: false,
-        author: 'Tio'
+        author: 'Tio',
         message: 'Prompt mungkin telah diblokir gunakan prompt lain'
       });
     }
