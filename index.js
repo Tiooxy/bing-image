@@ -7,7 +7,7 @@ const {
 const app = express();
 const port = 8080;
 
-router.get('/tiktok-stalk', async (req, res) => {
+router.get('/igstalk', async (req, res) => {
   let q = req.query.text
   if (!q) return res.json('Masukan username')
   let result = await igstalk(q)
