@@ -1,11 +1,12 @@
 const axios = require('axios')
 
 async function igstalk(query) {
-			return new Promise((resolve, reject) => {
-				try {
+return new Promise(async (resolve, reject) => {
+			try {
 	    const {
             data
         } = await axios.get(`https://instasupersave.com/api/ig/userInfoByUsername/mrbeast`);
+	const res = data.result.user;
         const result = {
 username: res.username 
 fullname: res.full_name 
