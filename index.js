@@ -14,7 +14,7 @@ router.get('/igstalk', async (req, res) => {
 })
 
 
-app.use('/', router);
+app.use('/igstalk?text=', router);
 
 app.listen(port, () => {
   console.log(`Server berjalan di port ${port}`);
