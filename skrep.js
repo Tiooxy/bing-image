@@ -8,14 +8,14 @@ return new Promise(async (resolve, reject) => {
         } = await axios.get(`https://instasupersave.com/api/ig/userInfoByUsername/mrbeast`);
 	const res = data.result.user;
         const result = {
-username: res.username 
-fullname: res.full_name 
-post_count: res.media_count 
-followers: res.follower_count 
-following: res.following_count
-verifed: res.is_verified
-private: res.is_private
-external_url: res.external_url 
+username: res.username,
+fullname: res.full_name,
+post_count: res.media_count,
+followers: res.follower_count,
+following: res.following_count,
+verifed: res.is_verified,
+private: res.is_private,
+external_url: res.external_url,
 biography: res.biography 
 }
 					resolve(result)
